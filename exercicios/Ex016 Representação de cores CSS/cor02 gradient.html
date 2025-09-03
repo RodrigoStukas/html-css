@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* Configurações globais das css*/
+            height: 100%;
+        }
+        /* to bottom: de baixo a cor Azul
+              to top: de cima a cor Azul
+              to right: da esquerda a cor Azul
+              to left: da direita a cor Azul
+              to bottom right: diagonal de baixo a direita */
+              /*-45deg: diagonal de baixo a esquerda */
+              /* Background-image: linear-gradient (ângulo, cor1, cor2, ...); é um gradiente linear para o fundo */
+              /* background image: radial-gradient (forma, cor1, cor2, ...); é um gradiente radial para o fundo para o fundo em forma de círculo */
+        body {
+            background-image: linear-gradient(to right, #D002BF, 12% ,#EF0081,#FE3839,#FA781A,#FC9200,#FFAD03 20%);
+            background-attachment: fixed;/* Fixa o fundo para não se mover com o scroll */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+
+</body>
+</html>

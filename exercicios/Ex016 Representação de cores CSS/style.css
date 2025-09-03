@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*{/*font-family: significa fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    /*linear-gradient: significa gradiente degrade*/
+    background-image: linear-gradient(to right, #F5D1CE, #A17571 );
+}
+main{
+    background-color: white;
+    /*border-radius: significa arredondar*/
+    border-radius: 10px;
+    /*box-shadow: significa sombra*/
+    /*5px 5px 15px significa: horizontal, vertical, blur*/
+    box-shadow: 5px 5px 15px #3b1714bd;
+    /*width: 600px; significa largura*/
+    width: 600px;
+    /*padding: significa preenchimento interior*/
+    padding: 10px;
+    /*margin: significa margem exterior para centralizar o conteúdo*/
+    margin: auto;
+
+}
+h1{
+    /*text-align: significa alinhamento de texto*/
+    text-align: center;
+    color: #471915;
+    /*text-shadow: significa sombra de texto*/
+    text-shadow: 1px 1px 0px #381411b4;
+}
+h2{
+    text-align: center;
+    color: #8F4842;
+}
+p{
+    text-align: justify;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture> <!-- Elemento picture para imagens responsivas -->
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png"> <!-- Imagem para telas pequenas -->
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png"> <!-- Imagem para telas médias -->
+        <img src="Imagens/foto-g.png" alt="Imagem flexível"> <!-- Imagem padrão para telas maiores -->
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+ <audio src="midia/Fall-Colors - ann annie (1).mp3"controls autoplay></audio> <!-- Elemento audio para reproduzir audio -->
+    <audio preload="metadata" autoplay controls loop> <!-- Elemento audio com preload, autoplay, controls e loop --> <!-- preload: carrega os metadados do audio, autoplay: inicia a reprodução automaticamente, controls: exibe os controles de reprodução, loop: repete o audio -->
+        <source src="midia/Fall-Colors - ann annie (2).mp3" type="audio/mpeg"> <!-- Fonte do audio em MP3 -->
+        <source src="midia/Fall-Colors - ann annie (2).ogg" type="audio/ogg"> <!-- Fonte do audio em OGG -->
+        <source src="midia/Fall-Colors - ann annie (2).wav" type="audio/wav">  <!-- Fonte do audio em WAV -->
+        
+
+        <p>Infelizmente seu navegador não consegue reproduzir audios <a href="midia/Fall-Colors - ann annie (2).mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- Mensagem alternativa caso o navegador não suporte o elemento audio -->
+</audio>
+      
+    
+</body>
+</html>

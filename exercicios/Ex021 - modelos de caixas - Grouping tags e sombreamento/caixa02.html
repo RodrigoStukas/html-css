@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        nav {
+            background-color: rgb(87, 87, 87);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.589); /* sombra na barra de navegação */
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: white;
+            padding-left: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /* borda arredondada */
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384); /* sombra no main */
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            
+        }
+        article > aside {
+            background-color: rgb(107, 107, 107);
+            
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        /* esse seletor se aplica apenas ao paragrafo dentro do footer para tirar a margem que deixa grande!  */
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /* deixa a div com borda arredondada */
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- Navegação -->
+            <a href="#">Link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a> 
+        </nav>
+    </header>
+    <main> <!-- Conteúdo principal -->
+        <section id="assuntos"> <!-- Seção de assuntos -->
+            <p>Esportes Politica Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article> <!-- Artigo -->
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ab error deserunt earum reprehenderit vero in corrupti, non exercitationem suscipit dolorum totam distinctio voluptates nemo sunt maxime blanditiis corporis. Rem.</p>
+                <aside> <!-- Barra lateral -->
+                    <p>Artigo escrito por Rodrigo Stukas</p>
+                </aside>
+            </article>
+        </section>
+    </main> 
+    <footer> <!-- Rodapé -->
+        <p>Todos os direitos reservados</p>
+        <p>Desenvolvido por [Seu Nome]</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

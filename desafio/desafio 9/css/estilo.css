@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(19, 17, 17);
+}
+main {
+    width: 80%;
+    margin: 0 auto; /* Centraliza o conteúdo principal */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: rgba(19, 17, 17, 0.541); /* Cor de fundo do conteúdo principal */
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+a {
+    display: inline-block; /* Permite definir largura e altura */
+    margin: auto; /* Espaçamento entre os links */
+    
+}
+
+iframe {
+    display: block; /* Faz o iframe ocupar toda a largura disponível no navegador */
+    margin: 0 auto; /* Centraliza o iframe na página principal */
+    border: 2px solid white; /* Adiciona uma borda branca ao redor do iframe */
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center; /* Justifica o texto no centro */
+}
+img {
+    display: block;
+    margin: 0 auto;
+}

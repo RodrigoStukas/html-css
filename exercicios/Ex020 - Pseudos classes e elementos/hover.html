@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* o seletor de filhos > é o exemplo abaixo sua funcionalidade é a mesma do seletor de descendente porém ele seleciona os filhos diretamente*/
+        /*display: none esconde o elemento*/
+
+        div > p {
+            display: none;
+        }
+
+        /* display: block mostra o elemento como abaixo e colocando um pseudo-classe de hover pegando o seletor de filhos > pra ele mostrar com o display: block */
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+            border: 1px solid black;
+        }
+        /* o seletor de hover muda a cor do texto quando o mouse passa por cima do elemento */
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido...</p>
+    </div>
+    </div>
+</body>
+</html>

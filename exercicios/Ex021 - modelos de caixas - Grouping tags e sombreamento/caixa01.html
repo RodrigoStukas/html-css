@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* Box-level element */
+
+            /* display: inline; se quiser que o h1 se comporte como um inline-level, descomente esta linha */
+
+            /* display: inline-block; se quiser que o h1 se comporte como um inline-level, descomente esta linha ele vira tipo um hibrido*/
+
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*
+            border-width: 10px;
+            border-style: solid; ESTILO DA BORDA em solid: que é o padrão 
+            border-color: darkslategray;
+            */
+
+            border: 10px solid darkslategray; /* atalho para definir largura, estilo e cor da borda */
+
+            /*padding-top: 10px;  preenchimento interno 
+            padding-right: 10px;  preenchimento interno 
+            padding-bottom: 10px;  preenchimento interno 
+            padding-left: 10px; preenchimento interno */
+
+            padding: 10px; /* atalho para definir preenchimento interno que é no sentido horário se todos nesse exemplo o 10px todos eram iguais só basta colacar um unico valor 10px*/
+
+            /* margin-top: 20px; margem externa
+            margin-right: 20px; margem externa
+            margin-bottom: 40px; margem externa
+            margin-left: 20px; margem externa */
+
+            margin: 20px 20px 40px 20px; /* atalho para definir margem externa, no sentido horário: superior, direita, inferior, esquerda */
+
+
+            /* outline-width: 5px; largura do contorno 
+            outline-style: dashed; estilo do contorno 
+            outline-color: darkslategray; */
+
+            outline: 5px dashed salmon; /* atalho para definir largura, estilo e cor do contorno */
+
+            /* margin: center; */ /* margem centralizada, mas não é um valor válido */
+            /* margin: auto; */ /* margem automática, mas não é usada aqui */
+
+        }
+
+        
+
+        a { /* Inline-level element */
+
+            /* display: block; */ /* se quiser que o link se comporte como um box-level, descomente esta linha */
+
+            /* display: inline-block; */ /* se quiser que o link se comporte como um box-level, descomente esta linha ele vira tipo um hibrido */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px; /* preenchimento interno */
+            padding-right: 10px; /* preenchimento interno */
+            padding-bottom: 10px; /* preenchimento interno */
+            padding-left: 10px; /* preenchimento interno */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level"</a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>

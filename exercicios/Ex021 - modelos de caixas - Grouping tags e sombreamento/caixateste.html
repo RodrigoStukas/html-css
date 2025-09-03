@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid; /*estilo da borda em solid: que é o padrão */
+            border-color: darkslategray;
+
+            padding-top: 10px; /* preenchimento interno */
+            padding-right: 10px; /* preenchimento interno */
+            padding-bottom: 10px; /* preenchimento interno */
+            padding-left: 10px; /* preenchimento interno */
+
+            margin-top: 10px; /* margem externa */
+            margin-right: 10px; /* margem externa */
+            margin-bottom: 10px; /* margem externa */
+            margin-left: 10px; /* margem externa */
+
+            outline-width: 5px; /* largura do contorno */
+            outline-style: dashed; /* estilo do contorno */
+            outline-color: darkslategray;
+
+            /* margin: center; */ /* margem centralizada, mas não é um valor válido */
+            /* margin: auto; */ /* margem automática, mas não é usada aqui */
+
+        }
+
+        h1#principal {
+            background-color: darkslategray;
+            color: white;
+            float: right; /* flutua para a direita */
+
+            padding-top: 10px; /* preenchimento interno */
+            padding-right: 10px; /* preenchimento interno */
+            padding-bottom: 10px; /* preenchimento interno */
+            padding-left: 10px; /* preenchimento interno */
+
+            margin-top: -350px; /* margem externa */
+            margin: center; /* margem externa */
+            margin-bottom: 10px; /* margem externa */
+            margin-left: 10px; /* margem externa */
+
+            
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px; /* preenchimento interno */
+            padding-right: 10px; /* preenchimento interno */
+            padding-bottom: 10px; /* preenchimento interno */
+            padding-left: 10px; /* preenchimento interno */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <h1 id="principal">Exemplo de caixa box-level 2</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level"</a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>
