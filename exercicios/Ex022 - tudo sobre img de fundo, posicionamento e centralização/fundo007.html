@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+
+            position: relative; /* pai posicionado */
+            height: 96vh; /* 96% da viewport altura */
+            background-color: purple;
+            padding: 10px;
+        }
+        #conteudo {
+            position: absolute; /* relativo ao primeiro pai posicionado */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%; /* 50% da largura do pai */
+            top: 50%; /* 50% da altura do pai */
+            transform: translate(-50%, -50%); /* 50% da largura e 50% da altura do pai para centralizar */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
